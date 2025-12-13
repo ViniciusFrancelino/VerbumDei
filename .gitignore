@@ -1,0 +1,5 @@
+# Modules json;
+node_modules
+package-lock.json
+.env
+.git
