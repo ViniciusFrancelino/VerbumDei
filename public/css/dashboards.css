@@ -1,0 +1,549 @@
+/* pagina mural */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Body */
+body {
+  background-color: #fce9d0;
+  background-size: cover;
+  background-attachment: scroll;
+  font-family: 'serif', 'Times New Roman';
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* SIDEBAR START -- SIDEBAR START -- SIDEBAR START -- SIDEBAR START -- SIDEBAR START -- */
+
+.divOptionSide {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 260px;
+  height: 90vh;
+
+  background: #43260c;
+  color: #fce9d0;
+
+  padding: 28px 20px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* ----- LOGO AO MEIO ----- */
+.divOptionLogo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: -15px;
+}
+
+.divOptionLogo img {
+  width: 70%;
+  height: auto;
+}
+
+/* Texto Olá, usuário */
+.hello {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hello h3 {
+  margin: 0;
+  color: #e3b062;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.hello span {
+  font-weight: 800;
+}
+
+/* ----- Botões ----- */
+.divOptionButton {
+  width: 100%;
+  text-align: center;
+  background-color: #fce9d0;
+  color: #43260c;
+  border-radius: 12px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.divOptionButton:hover {
+  background-color: #e2d0b5;
+  transform: scale(1.03);
+}
+
+.divOptionButton a {
+  color: #43260c;
+  text-decoration: none;
+}
+
+/* ----- Botão Sair ----- */
+.divOptionLogout {
+  width: 100%;
+  text-align: center;
+  background-color: #fce9d0;
+  color: #43260c;
+  border-radius: 12px;
+  padding: 8px 0;
+  cursor: pointer;
+  margin-top: auto;
+  transition: 0.2s;
+}
+
+.divOptionLogout:hover {
+  background-color: #e2d0b5;
+}
+
+.divOptionLogout h3 {
+  margin: 0;
+}
+
+/* FIM SIDEBAR -- FIM SIDEBAR -- FIM SIDEBAR -- FIM SIDEBAR -- FIM SIDEBAR -- FIM SIDEBAR -- */
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
+/* Dashboard -- Dashboard -- Dashboard -- Dashboard -- Dashboard -- Dashboard -- Dashboard -- Dashboard -- */
+
+
+/* KPIS Gerais */
+.divKpiGerais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25%;
+
+  width: 75%;
+  height: 100px;
+
+  margin: 3.8% 20%;
+  background-color: #f4d6b3;
+  border-radius: 20px;
+}
+
+.divKpiGerais span {
+  font-size: large;
+  font-weight: bold;
+}
+
+/* Graficos */
+.divGraficosGerais {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30%;
+
+  width: 75%;
+  height: 650px;
+
+  margin: 3.8% 20%;
+  background-color: #f4d6b3;
+  border-radius: 20px;
+}
+#myChart{
+  width: 100%;
+}
+
+
+
+/* Fim Dashboard -- Fim Dashboard -- Fim Dashboard -- Fim Dashboard -- Fim Dashboard -- Fim Dashboard -- */
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
+/* BIBLIA -- BIBLIA -- BIBLIA -- BIBLIA -- BIBLIA -- BIBLIA -- BIBLIA -- BIBLIA -- BIBLIA -- BIBLIA */
+
+.divLivrosOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25%;
+
+  width: 65%;
+  height: 100px;
+
+  margin: 3.8% 25%;
+  background-color: #f4d6b3;
+  border-radius: 20px;
+
+  font-family: 'serif', 'Times New Roman';
+}
+
+.divTitle {
+  color: #43260c;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.divLivros {
+  color: #43260c;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.selBibliaOptions {
+  background-color: #fce9d0;
+  color: #43260c;
+  
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  
+  border: 1px solid #43260c;
+  border-radius: 4px;
+
+  padding: 10px;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
+.divLeitura {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 65%;
+  height: 600px;
+
+  margin: 3.8% 25%;
+  background-color: #f4d6b3;
+  border-radius: 20px;
+
+  font-family: 'serif', 'Times New Roman';
+}
+
+.divLeitura {
+  color: #43260c;
+  font-size: 120%;
+}
+
+/* FIM BIBLIA -- FIM BIBLIA -- FIM BIBLIA -- FIM BIBLIA -- FIM BIBLIA -- FIM BIBLIA -- FIM BIBLIA */
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
+/* QUIZZ -- QUIZZ -- QUIZZ -- QUIZZ -- QUIZZ -- QUIZZ -- QUIZZ -- QUIZZ -- QUIZZ -- QUIZZ -- QUIZZ */
+
+.quizBody {
+  background-image: url("../assets/imgs/quizFundo.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* KPIS Do Quiz Realizado */
+.divQuizKpi {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30%;
+
+  width: 65%;
+  height: 100px;
+
+  margin: 3.8% 25%;
+  background-color: #f4d6b3;
+  border-radius: 20px;
+}
+
+/* Cards dos 3 quizzes diferentes */
+
+.divQuizzes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  
+  width: auto;
+  padding: 0;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+
+.card {
+  width: 340px;
+  height: 200px;
+  padding: 20px;
+
+  background: #f4d6b3;
+  border-radius: 20px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: #43260c9d;
+  transform: scale(1.05);
+}
+
+.divQuizButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.divQuizzes h2 {
+  font-size: 28px;
+  color: #43260c;
+  font-family: 'serif', 'Times New Roman';
+
+}
+
+.divQuizzes span {
+  color: #43260c;
+  font-size: 20px;
+  font-family: 'serif', 'Times New Roman';
+}
+
+/* Perguntas Quiz -- Perguntas Quiz -- Perguntas Quiz  */
+
+.divQuizTentativa {
+  display: none;
+  align-items: flex-start;
+  flex-direction: column;
+  
+  width: 600px;
+  height: 600px;
+
+  background-color: #f4d6b3;
+  border-radius: 20px;
+
+  margin-top: 4%;
+  margin-left: 33%;
+}
+
+.divInfoQuestao{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+
+  font-size: 100%;
+  margin: 5% 5%;
+
+  color: #43260c;
+}
+
+.divPerguntaAtual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  
+  font-weight: bold;
+
+  font-size: 150%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.divOptions {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.divOptions label {
+  font-size: 1.2rem;
+}
+
+.divButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- */
+
+.divPontuacao {
+  display: none;
+  align-items: flex-start;
+  flex-direction: column;
+  
+  width: 600px;
+  height: 150px;
+
+  background-color: #f4d6b3;
+  border-radius: 20px;
+
+  margin-top: 2%;
+  margin-left: 33%;
+}
+
+.divPontuacaoSpan {
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- */
+
+.text-success {
+  background-color: rgba(0, 255, 0, 0.493);
+}
+
+.text-danger {
+  background-color: rgba(255, 0, 0, 0.493);
+}
+
+
+/* FIM QUIZ -- FIM QUIZ -- FIM QUIZ -- FIM QUIZ -- FIM QUIZ -- FIM QUIZ -- FIM QUIZ -- FIM QUIZ -- */
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
+/* FORUM CSS -- FORUM CSS -- FORUM CSS -- FORUM CSS -- FORUM CSS -- FORUM CSS -- FORUM CSS -- */
+
+.dash-right {
+  display: flex;
+  width: 70%;
+  height: fit-content;
+  position: relative;
+  top: 0;
+  left: 25%;
+  height: 100vh;
+  overflow: auto;
+}
+
+.dash-right .avisos {
+  /* Controla o bloco inteiro onde ficam formulário e mural */
+  width: 100%;
+  color: #43260c;
+  font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.dash-right h1 {
+  /* Controla as cores das fontes do H1 */
+  color: #43260c;
+}
+
+.dash-right label {
+  /* Controla as cores das fontes da label */
+  color: #43260c;
+}
+
+.dash-right .avisos .container {
+  /* Centraliza e organiza verticalmente tudo dentro da área de avisos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dash-right .avisos .container .div-form {
+  /* Controla largura */
+  width: 95%;
+}
+
+.dash-right .avisos .container .div-form #form_postagem {
+  /* Estiliza o próprio form */
+  width: 95%;
+}
+
+.dash-right .avisos .div-form label {
+  /* Define largura dos labels */
+  width: 95%;
+}
+
+.dash-right .avisos .div-form input {
+  /* Deixa o input mais largo e com bordas arredondadas. */
+  width: 95%;
+  border: 3px solid #43260c;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.dash-right .avisos .div-form textarea {
+  /* Estilização completa da caixa de texto. */
+  width: 95%;
+  border: 3px solid #43260c;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.dash-right .avisos .div-form button {
+  /* Estilização Completa do Botão Enviar */
+  cursor: pointer;
+  font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Verdana, sans-serif;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 15px;
+  color: #fce9d0;
+  background-color: #43260c;
+  width: 120px;
+}
+
+.dash-right .avisos .div-form button:hover {
+  /* Hover do Botão Enviar */
+  background-color: #381c04;
+}
+
+.publicacao-btn-editar {
+  /* Estilização completa Botões Editar/Deletar */
+  cursor: pointer;
+  font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Verdana, sans-serif;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 8px;
+  color: #fce9d0;
+  background-color: #43260c;
+  width: 80px;
+}
+
+.publicacao {
+  /* Caixa de publicações */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #e2d0b5;
+  border-bottom: 3px solid #43260c;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.publicacao>*:not(:last-child) {
+  padding: 0 0 10px 0;
+}
+
+.div-results {
+  width: 100%;
+}
+
+.div-results .feed-container {
+  background-color: #fce9d0;
+  border-radius: 5px;
+  margin-bottom: 80px;
+}
+
+.div-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.div-buttons>* {
+  margin-left: 30px;
+}
+
+/* FIM FÓRUM -- FIM FÓRUM -- FIM FÓRUM -- FIM FÓRUM -- FIM FÓRUM -- FIM FÓRUM -- FIM FÓRUM -- */
